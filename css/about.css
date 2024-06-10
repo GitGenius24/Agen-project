@@ -1,0 +1,221 @@
+/*------------ section1-------------- */
+.about-section1{
+  height: 500px;
+  background-image: url(../images/backgrounds/page-title.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.about-section1 h1{
+    font-size: 100px;
+    font-weight: 900;
+    }
+/*------------ section1-------------- */
+/*------------ section2-------------- */
+/* -------------------------------part1-------------------------------------- */
+.about-section2 .rate{
+    width: 80%;
+    height: 9px;
+    background: rgb(226, 223, 223);
+}
+.about-section2 .rate::before{
+    content: attr(data-work);
+    position: absolute;
+    color: black;
+    top: -25px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+/* -----------vote1----------- */
+.about-section2 .vote1{
+    height: 9px;
+    animation-name: rating1;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.about-section2 .vote1::before{
+    content: attr(data-work);
+    position: absolute;
+    color: black;
+    top: -25px;
+    right: 0px;
+    font-size: 13px;
+    font-weight: bolder;
+}
+@keyframes rating1 {
+    0%{ width:0px;
+        background: linear-gradient(37deg, rgb(180, 62, 121) 1%, rgb(247, 70, 58) 100%);}
+    100%{ width:85%;
+        background: linear-gradient(37deg, rgb(180, 62, 121) 1%, rgb(247, 70, 58) 100%);}   
+}
+/* -----------vote1----------- */
+/* -----------vote2----------- */
+.about-section2 .vote2{
+    height: 9px;
+    animation-name: rating2;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.about-section2 .vote2::before{
+    content: attr(data-work);
+    position: absolute;
+    color: black;
+    top: -25px;
+    right: 0px;
+    font-size: 13px;
+    font-weight: bolder;
+}
+@keyframes rating2 {
+    0%{ width:0px;
+        background: linear-gradient(37deg, rgb(180, 62, 121) 1%, rgb(247, 70, 58) 100%);}
+    100%{ width:70%;
+        background: linear-gradient(37deg, rgb(180, 62, 121) 1%, rgb(247, 70, 58) 100%);}   
+}
+/* -----------vote2----------- */
+/* -----------vote3----------- */
+.about-section2 .vote3{
+    height: 9px;
+    animation-name: rating3;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.about-section2 .vote3::before{
+    content: attr(data-work);
+    position: absolute;
+    color: black;
+    top: -25px;
+    right: 0px;
+    font-size: 13px;
+    font-weight: bolder;
+}
+@keyframes rating3 {
+    0%{ width:0px;
+        background: linear-gradient(37deg, rgb(180, 62, 121) 1%, rgb(247, 70, 58) 100%);}
+    100%{ width:79%;
+        background: linear-gradient(37deg, rgb(180, 62, 121) 1%, rgb(247, 70, 58) 100%);}   
+}
+/* -----------vote3----------- */
+/* -----------vote4----------- */
+.about-section2 .vote4{
+    height: 9px;
+    animation-name: rating4;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.about-section2 .vote4::before{
+    content: attr(data-work);
+    position: absolute;
+    color: black;
+    top: -25px;
+    right: 0px;
+    font-size: 13px;
+    font-weight: bolder;
+}
+@keyframes rating4 {
+    0%{ width:0px;
+        background: linear-gradient(37deg, rgb(180, 62, 121) 1%, rgb(247, 70, 58) 100%);}
+    100%{ width:90%;
+        background: linear-gradient(37deg, rgb(180, 62, 121) 1%, rgb(247, 70, 58) 100%);}   
+}
+@media screen and (max-width:600px){
+    .about-section2 .rate{
+        width: 100%;
+    }
+}
+/* -----------vote4----------- */
+/* -------------------------------part1-------------------------------------- */
+/* -------------------------------part2-------------------------------------- */
+.about-section2 .slide{
+    background-image: url(../images/about/video-thumb.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 420px;
+}
+.about-section2 .slide::before{
+    content: attr(data-work);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(3, 3, 87);
+    opacity: .8;
+}
+.about-section2 .slide h1{
+    font-size: 100px;
+    font-weight: 900;
+    z-index: 5;
+}
+.about-section2 .slide h1 .letter{
+    display: inline-block;
+    color: black;
+    animation-name: letter;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes letter {
+    0%{transform:rotate(0deg);}
+    50%{transform: rotate(25deg);}
+    75%{transform: rotate(-25deg);}
+    100%{transform: rotate(0deg);}
+}
+@media screen and (max-width:600px){
+    .about-section2 .slide h1{
+        font-size: 85px;
+    }
+}
+/* -------------------------------part2-------------------------------------- */
+/* -------------------------------part3-------------------------------------- */
+.about-section2 .card{
+    border: 1px white solid;
+    box-shadow: 0px 10px 40px rgb(3, 3, 87);
+    }
+    @media screen and (max-width:600px){
+        .about-section2{
+            height: auto;
+        }
+        .about-section2 .card{
+            width: 60%;
+            margin: auto;
+            border-radius: 10px;
+            height: 400px;
+        }
+    }
+/* -------------------------------part3-------------------------------------- */
+/*------------ section2-------------- */
+/*------------ section3-------------- */
+.about-section3{
+    height: 550px;
+    background-color: rgb(3, 3, 87);
+}
+.about-section3 .banner{
+    width: 60%;
+    height: 100%;
+    background-image: url(../images/banner/brush.png);
+    background-position-y:250px ;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.about-section3 .banner .user{
+    width: 700px;
+    height: 300px;
+    background-color: white;
+}
+.about-section3 .banner h2{
+    margin-top:100px ;
+    margin-bottom: 40px;
+}
+@media screen and (max-width:600px){
+    .about-section3 .banner h2{
+        margin-top: 20px;
+    }
+    .about-section3 .banner .user{
+        width: 100%;
+        height: auto;
+    }
+}
+/*------------ section3-------------- */

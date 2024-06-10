@@ -1,0 +1,11 @@
+.career-section .btn{
+    width: 150px;
+    height: 50px;
+    color: rgb(252, 99, 88);
+    right: 0px;
+    top: 0px;
+}
+.career-section .btn:hover{
+    background: linear-gradient(37deg, rgb(180, 62, 121) 1%, rgb(247, 70, 58) 100%); 
+    color: white;
+}

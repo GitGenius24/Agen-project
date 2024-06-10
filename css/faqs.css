@@ -1,0 +1,16 @@
+.faq-box{
+    background: rgb(245, 245, 245);
+    height: 75px;
+    overflow: hidden;
+    transition: 5s;
+}
+.faq-box .i{
+    right: 20px;
+    top: 15px;
+}
+.faq-box p{
+    cursor: text;
+}
+.faq-box h3{
+    color: rgb(139, 139, 139);
+}
